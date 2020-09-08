@@ -1,0 +1,13 @@
+<h4> {{title}}</h4>
+<div>
+  <span *ngFor="let country of countries">
+    <div class="card" style="width: 18rem;">
+      <img src= {{country.flag}} class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">{{country.name}}</h5>
+        <p class="card-text">Capital : {{country.capital}} </p>
+        <p class="card-text">Region : {{country.region}} </p>
+      </div>
+    </div>
+  </span>
+</div>
