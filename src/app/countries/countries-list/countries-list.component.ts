@@ -12,11 +12,6 @@ export class CountriesListComponent implements OnInit {
 
   title = '1st Angular Assignement';
   countries: Country[];
-  divEU = document.getElementById('EU');
-  divAS = document.getElementById('AS');
-  divAM = document.getElementById('AM');
-  divAF = document.getElementById('AF');
-  divOC = document.getElementById('OC');
 
   constructor(private countryService: CountryService) { }
 
@@ -27,7 +22,7 @@ export class CountriesListComponent implements OnInit {
   changeRegion(): void{
     this.countries
   }
-  //αυτος ο τροπος δουλευει αριστα ενω ο απο κατω οχι 
+  
   showDivEurope(): void {
     const div = document.getElementById('EU');
     div.style.display = "block";
