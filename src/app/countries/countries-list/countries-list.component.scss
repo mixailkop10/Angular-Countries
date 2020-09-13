@@ -1,0 +1,100 @@
+
+div.buttons {
+    margin: 0;
+    position: absolute;
+    transform: translateX(135%);
+    display: table-row;
+
+    button {
+        font-weight: bold;
+        background: lightgray;
+        padding: .3em .8em;
+        cursor: pointer;
+    }
+}
+
+
+div.europe {
+    display: none;
+
+    span {
+        display: inline;
+        flex-direction: row;
+    
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display:table-row;
+                  
+        }
+    }
+}
+
+div.asia {
+    display: none;
+
+    span {
+        display: inline;
+        flex-direction: row;
+    
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display:table-row;
+                  
+        }
+    }
+}
+
+div.america {
+    display: none;
+
+    span {
+        display: inline;
+        flex-direction: row;
+    
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display:table-row;
+                  
+        }
+    }
+}
+
+div.africa {
+    display: none;
+
+    span {
+        display: inline;
+        flex-direction: row;
+    
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display:table-row;
+                  
+        }
+    }
+}
+
+div.oceania {
+    display: none;
+
+    span {
+        display: inline;
+        flex-direction: row;
+    
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display:table-row;
+                  
+        }
+    }
+}

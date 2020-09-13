@@ -1,13 +1,111 @@
-<h4> {{title}}</h4>
-<div>
+<div class="buttons" id="B">
+  <button (click) = "showDivEurope()">
+    Europe
+  </button>
+  <button (click) = "showDivAsia()">
+    Asia
+  </button>
+  <button (click) = "showDivAmerica()">
+    America
+  </button>
+  <button (click) = "showDivAfrica()">
+    Africa
+  </button>
+  <button (click) = "showDivOceania()">
+    Oceania
+  </button>
+</div>
+
+
+<br>
+<br>
+
+<div class="europe" id="EU">
+  
   <span *ngFor="let country of countries">
-    <div class="card" style="width: 18rem;">
-      <img src= {{country.flag}} class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title">{{country.name}}</h5>
-        <p class="card-text">Capital : {{country.capital}} </p>
-        <p class="card-text">Region : {{country.region}} </p>
+    <ul *ngIf= "country.region == 'Europe' ">
+      <div class="card" style="width: 18rem;">
+        <img src= {{country.flag}} class="card-img-top" width="110" height="160">
+        <div class="card-body">
+          <h5 class="card-title">{{country.name}}</h5>
+          <p class="card-text">Capital : {{country.capital}} </p>
+          <p class="card-text">Region : {{country.region}} </p>
+          <p class="card-text">Population: {{country.population}} </p>
+        </div>
       </div>
-    </div>
+    </ul>
   </span>
+
+</div>
+
+<div class="asia" id="AS">
+  
+  <span *ngFor="let country of countries">
+    <ul *ngIf= "country.region == 'Asia' ">
+      <div class="card" style="width: 18rem;">
+        <img src= {{country.flag}} class="card-img-top" width="110" height="160">
+        <div class="card-body">
+          <h5 class="card-title">{{country.name}}</h5>
+          <p class="card-text">Capital : {{country.capital}} </p>
+          <p class="card-text">Region : {{country.region}} </p>
+          <p class="card-text">Population: {{country.population}} </p>
+        </div>
+      </div>
+    </ul>
+  </span>
+
+</div>
+
+<div class="america" id="AM">
+  
+  <span *ngFor="let country of countries">
+    <ul *ngIf= "country.region == 'Americas' ">
+      <div class="card" style="width: 18rem;">
+        <img src= {{country.flag}} class="card-img-top" width="110" height="160">
+        <div class="card-body">
+          <h5 class="card-title">{{country.name}}</h5>
+          <p class="card-text">Capital : {{country.capital}} </p>
+          <p class="card-text">Region : {{country.region}} </p>
+          <p class="card-text">Population: {{country.population}} </p>
+        </div>
+      </div>
+    </ul>
+  </span>
+
+</div>
+
+<div class="africa" id="AF">
+  
+  <span *ngFor="let country of countries">
+    <ul *ngIf= "country.region == 'Africa' ">
+      <div class="card" style="width: 18rem;">
+        <img src= {{country.flag}} class="card-img-top" width="110" height="160">
+        <div class="card-body">
+          <h5 class="card-title">{{country.name}}</h5>
+          <p class="card-text">Capital : {{country.capital}} </p>
+          <p class="card-text">Region : {{country.region}} </p>
+          <p class="card-text">Population: {{country.population}} </p>
+        </div>
+      </div>
+    </ul>
+  </span>
+
+</div>
+
+<div class="oceania" id="OC">
+  
+  <span *ngFor="let country of countries">
+    <ul *ngIf= "country.region == 'Oceania' ">
+      <div class="card" style="width: 18rem;">
+        <img src= {{country.flag}} class="card-img-top" width="110" height="160">
+        <div class="card-body">
+          <h5 class="card-title">{{country.name}}</h5>
+          <p class="card-text">Capital : {{country.capital}} </p>
+          <p class="card-text">Region : {{country.region}} </p>
+          <p class="card-text">Population: {{country.population}} </p>
+        </div>
+      </div>
+    </ul>
+  </span>
+
 </div>
