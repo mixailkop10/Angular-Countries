@@ -1,4 +1,13 @@
+body {
+    margin: 0;
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 18px;
+}
+
 div {
     margin: auto;
     text-align: center;
+    width: 100%;
+    background: lightblue;
+    padding: 1em 0;
 }
